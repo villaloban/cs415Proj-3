@@ -32,6 +32,7 @@ private:
     void collect(const Node *n, std::string &current,
                  std::vector<std::string> &out, long long &ops) const;
     void destroy(Node *n);
+    void countNodes(const Node *node, long long &count) const;
 };
 
 #endif // STANDARDTRIE_H
