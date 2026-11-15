@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <fstream>
 
 // Normalizer.h
 std::string normalize(const std::string &raw);                   // lowercase, keep a-z only
