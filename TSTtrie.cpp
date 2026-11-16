@@ -25,7 +25,7 @@ void TSTTrie::insertHelper(Node *&node, const std::string &word, size_t index, l
         node->eq = nullptr;
         numNodes++;
     }
-    ops++; // Count the operation for the current node comparison
+    ops++;
     if (ch < node->ch)
     {
         insertHelper(node->left, word, index, ops);
@@ -62,7 +62,7 @@ const TSTTrie::Node *TSTTrie::findHelper(const Node *node, const std::string &ke
         return nullptr;
     }
     char ch = key[index];
-    ops++; // Count the operation for the current node comparison
+    ops++;
     if (ch < node->ch)
     {
         return findHelper(node->left, key, index, ops);
